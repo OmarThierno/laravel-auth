@@ -57,13 +57,13 @@
             </a>
           </li>
           <li>
-            <a href="sponsorizzazione.html" class="nav-link text-white">
+            <a href="{{route('admin.projects.create')}}" class="nav-link text-white">
               <i class="fa-solid fa-chart-line"></i>
               Created
             </a>
           </li>
           <li>
-            <a href="prodotti.html" class="nav-link text-white">
+            <a href="{{route('admin.projects.index')}}" class="nav-link text-white">
               <i class="fa-solid fa-box-archive"></i>
               Prodotti
             </a>
