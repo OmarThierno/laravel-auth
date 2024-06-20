@@ -11,6 +11,7 @@
           <th scope="col">name</th>
           <th scope="col">description</th>
           <th scope="col">programming_languages</th>
+          <th scope="col">Action</th>
         </tr>
       </thead>
       <tbody>
@@ -20,6 +21,9 @@
             <td>{{$project->name}}</td>
             <td>{{$project->description}}</td>
             <td>{{$project->programming_languages}}</td>
+            <td>
+              <a href="{{route('admin.projects.show', ['project' => $project->slug])}}" class="btn btn-success">SHOW</a>
+            </td>
           </tr>
             
         @endforeach

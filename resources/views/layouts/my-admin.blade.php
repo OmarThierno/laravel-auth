@@ -51,33 +51,21 @@
         
         <ul class="nav nav-pills flex-column pt-4 mb-auto">
           <li class="nav-item">
-            <a href="{{route('admin.dashboard')}}" class="nav-link active" aria-current="page">
+            <a href="{{route('admin.dashboard')}}" class="nav-link {{Route::currentRouteName() === 'admin.dashboard' ? 'active' : 'text-white'}}" aria-current="page">
               <i class="fa-solid fa-house"></i>
               Dashboard
             </a>
           </li>
           <li>
-            <a href="{{route('admin.projects.create')}}" class="nav-link text-white">
+            <a href="{{route('admin.projects.create')}}" class="nav-link {{Route::currentRouteName() === 'admin.projects.create' ? 'active' : 'text-white'}}">
               <i class="fa-solid fa-chart-line"></i>
               Created
             </a>
           </li>
           <li>
-            <a href="{{route('admin.projects.index')}}" class="nav-link text-white">
+            <a href="{{route('admin.projects.index')}}" class="nav-link {{Route::currentRouteName() === 'admin.projects.index' ? 'active' : 'text-white'}}">
               <i class="fa-solid fa-box-archive"></i>
               Prodotti
-            </a>
-          </li>
-          <li>
-            <a href="nuovo-prodotti.html" class="nav-link text-white">
-              <i class="fa-solid fa-plus"></i>
-              Nuovo prodotto
-            </a>
-          </li>
-          <li>
-            <a href="#" class="nav-link text-white">
-              <i class="fa-solid fa-user"></i>
-              Clienti
             </a>
           </li>
         </ul>
