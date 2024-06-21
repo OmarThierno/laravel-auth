@@ -23,6 +23,7 @@
             <td>{{$project->programming_languages}}</td>
             <td>
               <a href="{{route('admin.projects.show', ['project' => $project->slug])}}" class="btn btn-success">SHOW</a>
+              <a href="{{route('admin.projects.edit', ['project' => $project->slug])}}" class="btn btn-warning">Modify</a>
             </td>
           </tr>
             

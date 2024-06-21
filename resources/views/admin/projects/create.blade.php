@@ -19,7 +19,7 @@
           <input type="text" class="form-control" id="programming-languages" placeholder="JS" name="programming_languages">
         </div>
         <div class="mb-3">
-          <label for="slug" class="form-label">Inserisci il linguaggio</label>
+          <label for="slug" class="form-label">Inserisci lo slug</label>
           <input type="text" class="form-control" id="slug" placeholder="laraverl-controller" name="slug">
         </div>
         <button class="btn btn-success">Crea</button>
